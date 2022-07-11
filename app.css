@@ -1,11 +1,37 @@
+@import "normalize.css";
+@import url("assets/stylesheets/normalize.css");
+
+@font-face {
+  font-family: "Nunito Sans Regular";
+  src: url("assets/fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("assets/fonts/NunitoSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Nunito Sans Bold";
+  src: url("assets/fonts/NunitoSans-Bold.woff2") format("woff2"),
+    url("assets/fonts/NunitoSans-Bold.woff") format("woff");
+}
+
+h1 {
+  font-family: "Nunito Sans Bold";
+}
+
+body {
+  font-family: "Nunito Sans Regular";
+  background: #dddddd;
+}
+
 #container {
   display: flex;
   justify-content: center;
 }
 
 #inner {
+  padding: 23px;
+  margin-top: 46px;
   max-width: 420px;
   min-width: 320px;
+  background: white;
 }
 
 #form div {
@@ -15,6 +41,18 @@
   margin-bottom: 23px;
 }
 
+label {
+  margin-bottom: 6px;
+}
+
 .button {
   padding-top: 23px;
+}
+
+button {
+  color: white;
+  background: #aeb779;
+  padding: 12px 0;
+  outline: none;
+  border: none;
 }
