@@ -1,10 +1,20 @@
-li {
-  list-style: none;
-  margin-bottom: 1rem;
+#container {
+  display: flex;
+  justify-content: center;
 }
-li label {
-  display: block;
+
+#inner {
+  max-width: 420px;
+  min-width: 320px;
 }
-li input {
-  display: block;
+
+#form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 23px;
+}
+
+.button {
+  padding-top: 23px;
 }
