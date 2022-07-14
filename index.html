@@ -8,18 +8,24 @@
   <body>
     <div id="container">
       <div id="inner">
-        <h1>Welcome</h1>
+        <h1 class="no-highlight-element-padding">Welcome</h1>
         <div id="form">
-          <h2>Create your account</h2>
-          <div>
+          <h2 class="no-highlight-element-padding">Create your account</h2>
+          <div class="input-background">
             <label for="mail">Email:</label>
-            <input type="email" id="mail" name="user_email" />
+            <input
+              type="email"
+              id="mail"
+              name="user_email"
+              required="required"
+              aria-required="true"
+            />
           </div>
-          <div>
+          <div class="input-background input-background-temp">
             <label for="name">Password</label>
             <input type="text" id="password" name="user_password" />
           </div>
-          <div>
+          <div class="input-background">
             <label for="name">Verify password</label>
             <input
               type="text"
@@ -27,7 +33,7 @@
               name="user_password-verify"
             />
           </div>
-          <div class="button">
+          <div class="no-highlight-element-padding button">
             <button type="submit">Next</button>
           </div>
         </div>

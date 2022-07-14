@@ -27,11 +27,15 @@ body {
 }
 
 #inner {
-  padding: 23px;
   margin-top: 46px;
-  max-width: 420px;
+  width: 370px;
   min-width: 320px;
   background: white;
+  border-radius: 3px;
+}
+.no-highlight-element-padding {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 #form div {
@@ -39,6 +43,17 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 23px;
+}
+#form input,
+#form button {
+  min-height: 32px;
+}
+.input-background {
+  padding: 15px 40px;
+}
+
+.input-background-temp {
+  background: #eff6ff;
 }
 
 label {
@@ -55,4 +70,5 @@ button {
   padding: 12px 0;
   outline: none;
   border: none;
+  border-radius: 3px;
 }
