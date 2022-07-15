@@ -7,7 +7,7 @@ function addHighlight() {
 }
 
 formInputs.forEach(function (formInput) {
-  formInput.addEventListener("click", addHighlight);
+  formInput.addEventListener("focus", addHighlight);
 });
 
 function removeHighlight() {
