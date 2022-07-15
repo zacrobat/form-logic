@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<head>
+  <meta charset="utf-8" />
+  <title>Form Logic</title>
+  <meta name="author" content="Z to the C" />
+  <meta name="description" content="Vanilla JS form work" />
+  <script src="app.js"></script>
+</head>
+
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
@@ -8,10 +16,10 @@
   <body>
     <div id="container">
       <div id="inner">
-        <h1 class="no-highlight-element-padding">Welcome</h1>
+        <h1 class="sides">Welcome</h1>
         <div id="form">
-          <h2 class="no-highlight-element-padding">Create your account</h2>
-          <div class="input-background">
+          <h2 class="sides">Create your account</h2>
+          <div class="input sides">
             <label for="mail">Email:</label>
             <input
               type="email"
@@ -21,11 +29,11 @@
               aria-required="true"
             />
           </div>
-          <div class="input-background input-background-temp">
+          <div class="input sides">
             <label for="name">Password</label>
             <input type="text" id="password" name="user_password" />
           </div>
-          <div class="input-background">
+          <div class="input sides">
             <label for="name">Verify password</label>
             <input
               type="text"
@@ -33,7 +41,7 @@
               name="user_password-verify"
             />
           </div>
-          <div class="no-highlight-element-padding button">
+          <div class="inpt button sides">
             <button type="submit">Next</button>
           </div>
         </div>

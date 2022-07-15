@@ -21,6 +21,10 @@ body {
   background: #dddddd;
 }
 
+button {
+  font-family: "Nunito Sans Bold";
+}
+
 #container {
   display: flex;
   justify-content: center;
@@ -33,7 +37,7 @@ body {
   background: white;
   border-radius: 3px;
 }
-.no-highlight-element-padding {
+.sides {
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -44,15 +48,18 @@ body {
   justify-content: center;
   margin-bottom: 23px;
 }
+
 #form input,
 #form button {
   min-height: 32px;
 }
-.input-background {
-  padding: 15px 40px;
+
+.input {
+  padding-top: 15px;
+  paddint-bottom: 15px;
 }
 
-.input-background-temp {
+.input selected {
   background: #eff6ff;
 }
 
