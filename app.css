@@ -56,10 +56,10 @@ button {
 
 .input {
   padding-top: 15px;
-  paddint-bottom: 15px;
+  padding-bottom: 15px;
 }
 
-.input selected {
+.selected {
   background: #eff6ff;
 }
 
