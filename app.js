@@ -1,15 +1,20 @@
 const formInputs = document.querySelectorAll("input");
 console.log(formInputs);
 
-function identifyFocus() {
-  console.log("Identifying focus");
+function addHighlight() {
   let currentInput = event.target.closest("div");
-  console.log(currentInput);
   currentInput.classList.add("selected");
 }
 
 formInputs.forEach(function (formInput) {
-  console.log("Binding the input");
-  console.log(formInput.type);
-  formInput.addEventListener("click", identifyFocus);
+  formInput.addEventListener("click", addHighlight);
+});
+
+function removeHighlight() {
+  let currentInput = event.target.closest("div");
+  currentInput.classList.remove("selected");
+}
+
+formInputs.forEach(function (formInput) {
+  formInput.addEventListener("blur", removeHighlight);
 });
