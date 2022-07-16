@@ -1,4 +1,4 @@
-const formInputs = document.querySelectorAll("input");
+const formInputs = document.querySelectorAll("input, button");
 console.log(formInputs);
 
 function addHighlight() {
