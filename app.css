@@ -80,3 +80,8 @@ button {
   border-radius: 3px;
   cursor: pointer;
 }
+
+button:disabled:hover {
+  background: #dddddd;
+  cursor: not-allowed;
+}
