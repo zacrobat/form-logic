@@ -59,6 +59,10 @@ button {
   padding-bottom: 15px;
 }
 
+input:focus {
+  color: #509cff;
+}
+
 .selected {
   background: #eff6ff;
 }
