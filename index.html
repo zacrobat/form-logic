@@ -28,21 +28,36 @@
               required="required"
               aria-required="true"
             />
+            <p class="help-hint" id="email-desc">
+              Please provide a valid email address.
+            </p>
           </div>
           <div class="input sides">
             <label for="name">Password</label>
-            <input type="text" id="password" name="user_password" />
+            <input
+              type="password"
+              id="password"
+              name="user_password"
+              aria-describedby="password-desc"
+            />
+            <p class="help-hint" id="password-desc">
+              Please use at least 8 characters and include numbers, uppercase
+              and lowercase letters.
+            </p>
           </div>
           <div class="input sides">
             <label for="name">Verify password</label>
             <input
-              type="text"
+              type="password"
               id="password-verify"
               name="user_password-verify"
             />
+            <p class="help-hint" id="password-confirm-desc">
+              Please ensure the password is same and correct.
+            </p>
           </div>
           <div class="input sides">
-            <button type="submit" disabled>Next</button>
+            <button type="submit">Next</button>
           </div>
         </div>
       </div>

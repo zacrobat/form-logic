@@ -3,7 +3,7 @@ console.log(formInputs);
 
 function addHighlight() {
   let currentInput = event.target.closest("div");
-  currentInput.classList.add("selected");
+  currentInput.classList.add("selected", "help-parent");
 }
 
 formInputs.forEach(function (formInput) {
@@ -12,9 +12,11 @@ formInputs.forEach(function (formInput) {
 
 function removeHighlight() {
   let currentInput = event.target.closest("div");
-  currentInput.classList.remove("selected");
+  currentInput.classList.remove("selected", "help-parent");
 }
 
 formInputs.forEach(function (formInput) {
   formInput.addEventListener("blur", removeHighlight);
 });
+
+// To-do use removeAttribute(disabled) from button when validations are satisfied

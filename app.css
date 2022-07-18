@@ -71,6 +71,21 @@ label {
   margin-bottom: 6px;
 }
 
+.help-hint {
+  color: white;
+  background: #509cff;
+  padding: 10px;
+  font-size: 13px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-top: -1px;
+  display: none;
+}
+
+.help-parent .help-hint {
+  display: block;
+}
+
 button {
   color: white;
   background: #aeb779;
@@ -81,7 +96,7 @@ button {
   cursor: pointer;
 }
 
-button:disabled:hover {
+button:disabled {
   background: #dddddd;
   cursor: not-allowed;
 }
