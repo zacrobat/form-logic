@@ -40,6 +40,7 @@
               name="user_password"
               aria-describedby="password-desc"
               required
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
             />
             <p class="help-hint" id="password-desc">
               Please use at least 8 characters and include numbers, uppercase
@@ -49,7 +50,7 @@
           <div class="input sides">
             <label for="name">Verify password</label>
             <input
-              type="password"
+              type="text"
               id="password-verify"
               name="user_password-verify"
               required
